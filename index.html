@@ -49,7 +49,9 @@
 							<div class="logo"><span class="icon fa-gem"></span></div>
 							<h2>Freedom is just a hand away!</h2>
 							<p>Welcome to my website! I am <a href="https://www.facebook.com/" target="_blank">Jane Doe</a>, a practicing psychologist.</p>
-							<button class="primary"><a class="button_link" href="#book_a_session">Book a Session!</a></button>
+							<form action="#book_a_session">
+								<input class="primary" type="submit" value="Book a Session">
+							</form>
 						</div>
 					</section>
 
@@ -96,8 +98,45 @@
 							<section id="four" class="wrapper alt style1">
 								<div class="inner">
 									<h2 class="major"><a id="book_a_session"></a>Book a Session</h2>
+
+
+
 									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-									<section class="features">
+
+									<!-- Booking Form -->
+
+									<form>
+										<label for="fname">Your Name:</label>
+										<input type="text" id="fname" name="fname" required><br>
+										<label for="e_mail">Email:</label>
+										<input type="email" id="e_mail" name="e_mail" required><br>
+										<label>Gender:</label>
+										<div class="radio_inline">
+											<input type="radio" id="male" name="gender" value="Male">
+											<label for="male">Male </label><br>
+											<input type="radio" id="female" name="gender" value="Female">
+											<label for="female">Female</label><br>
+										</div>
+										<label for="age">Your Age:</label>
+										<input type="text" id="age" name="age" required><br>
+										<label for="inquiry">Please write your inquiry:</label>
+										<textarea name="inquiry" rows="5"></textarea>
+
+										<hr>
+										<input type="Submit" value="Submit">
+									</form>
+
+									<form>
+										<input type="radio" id="html" name="fav_language" value="HTML">
+										<label for="html">HTML</label><br>
+										<input type="radio" id="css" name="fav_language" value="CSS">
+										<label for="css">CSS</label><br>
+										<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+										<label for="javascript">JavaScript</label>
+									</form>
+
+									<!-- Removed by me -->
+									<!-- <section class="features">
 										<article>
 											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
 											<h3 class="major">Sed feugiat lorem</h3>
@@ -126,7 +165,7 @@
 									<ul class="actions">
 										<li><a href="#" class="button">Browse All</a></li>
 									</ul>
-								</div>
+								</div> -->
 							</section>
 
 					</section>
