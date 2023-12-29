@@ -105,36 +105,38 @@
 
 									<!-- Booking Form -->
 
-									<form>
-										<label for="fname">Your Name:</label>
-										<input type="text" id="fname" name="fname" required><br>
-										<label for="e_mail">Email:</label>
-										<input type="email" id="e_mail" name="e_mail" required><br>
-										<label>Gender:</label>
-										<div class="radio_inline">
-											<input type="radio" id="male" name="gender" value="Male">
-											<label for="male">Male </label><br>
-											<input type="radio" id="female" name="gender" value="Female">
-											<label for="female">Female</label><br>
+									<form style="max-width: 580px;">
+										<div class="fields">
+											<div class="field">
+												<label for="fname">Your Name</label>
+												<input type="text" id="fname" name="fname" required>
+											</div>
+											<div class="field">
+												<label for="e_mail">Email</label>
+												<input type="email" id="e_mail" name="e_mail" required>
+											</div>
+											<div class="field">
+												<label>Gender</label>
+												<div class="radio_inline">
+													<input type="radio" id="male" name="gender" value="Male">
+													<label for="male">Male </label>
+													<input type="radio" id="female" name="gender" value="Female">
+													<label for="female">Female</label>
+											</div>
 										</div>
-										<label for="age">Your Age:</label>
-										<input type="text" id="age" name="age" required><br>
-										<label for="inquiry">Please write your inquiry:</label>
-										<textarea name="inquiry" rows="5"></textarea>
-
-										<hr>
-										<input type="Submit" value="Submit">
+										<div class="field">
+											<label for="age">Your Age</label>
+											<input type="text" id="age" name="age" required>
+										</div>
+										<div class="field">
+											<label for="inquiry">Please write your inquiry:</label>
+											<textarea name="inquiry" rows="4"></textarea>
+										</div>
+										<div class="field">
+											<input type="Submit" value="Submit">
+										</div>
 									</form>
-
-									<form>
-										<input type="radio" id="html" name="fav_language" value="HTML">
-										<label for="html">HTML</label><br>
-										<input type="radio" id="css" name="fav_language" value="CSS">
-										<label for="css">CSS</label><br>
-										<input type="radio" id="javascript" name="fav_language" value="JavaScript">
-										<label for="javascript">JavaScript</label>
-									</form>
-
+								
 									<!-- Removed by me -->
 									<!-- <section class="features">
 										<article>
