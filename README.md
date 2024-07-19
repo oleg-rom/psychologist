@@ -1,2 +1,1 @@
-# psychologist
-https://oleg-rom.github.io/psychologist/
+## https://oleg-rom.github.io/psychologist/
